@@ -1,0 +1,15 @@
+範例網頁：                                                         
+http://cis.nccu.edu.tw/CourseMap/Students/CourseDetail.aspx?schYy=103&schSmt=2&subNum=703023&subGop=00&smt=1&teaNum=102657
+
+我的Github Page網址（作業一之一，連上後裡面含作業一之二（表單）的網
+址連結）：
+https://yichiatsai.github.io/WP-Assignment1-1.html
+
+附註：
+Assignment1-1:
+上傳至GoogleDrive的網頁：https://googledrive.com/host/0Bw0fq0rYUk1WbHNPandJSXJEeG8/
+經過縮網址的網頁：http://goo.gl/BY2EtN
+
+Assignment1-2:
+上傳至GoogleDrive的網頁：https://googledrive.com/host/0Bw0fq0rYUk1WRnBQamI5UVRudEE
+經過縮網址的網頁：http://goo.gl/XLLsAN
