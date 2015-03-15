@@ -1,0 +1,38 @@
+/*body*/
+body{
+font-family: 'Lobster Two';
+background: url(http://subtlepatterns.com/patterns/school.png) 
+left center;
+}
+
+/*input*/
+input/*[type=text]*/{
+  border: 1px solid blue;
+  background: orange;
+}
+input[type=submit]{
+  opacity: 0.3;
+}
+input:checked + label{
+  color: green;
+}
+input:checked ~ input[type=submit]{
+  opacity: 1;
+}
+
+/*a*/
+a:link{
+  text-decoration: none;
+  /* remove underline */
+  color: blue;
+}
+a:visited{
+  color: purple;
+}
+a:hover{
+  text-decoration: underline;
+  color: red;
+}
+a:active{
+  color: yellow;
+}
