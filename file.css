@@ -1,38 +1,140 @@
 /*body*/
 body{
-font-family: 'Lobster Two';
-background: url(http://subtlepatterns.com/patterns/school.png) 
-left center;
+	background: url(http://subtlepatterns.com/patterns/school.png) 
+	left center;
+	/*max-width:600px;*/
+	padding:1em;
+	/*border-radius:1em;*/
 }
+/*-------------------------------*/
 
-/*input*/
-input/*[type=text]*/{
-  border: 1px solid blue;
-  background: orange;
+/*image*/
+.headerline img{
+	width:30%;
+	padding:0.5em;
+	border-radius:2em;
+	background-color:#ffffff;
+	box-sizing:border-box;
 }
-input[type=submit]{
-  opacity: 0.3;
+footer>img{
+	width:50%;
+	padding:1em;
+	border-radius:2em;
+	background-color:rgba(200, 200, 255, 0.5);
+	box-sizing:border-box;
 }
-input:checked + label{
-  color: green;
+/*-------------------------------*/
+
+/*headerline*/
+.headerline h1{
+	font-family: 'La Belle Aurore', cursive;
+	font-size: 3em;
+	color:rgba(255, 100, 0, 1);
+	width:50%;
+	box-shadow: 0 1px 5px rgba(0,0,0,1), 0 0 50px rgba(0,0,0,0.3) inset;
 }
-input:checked ~ input[type=submit]{
-  opacity: 1;
+.headerline h2{
+	font-family: 'La Belle Aurore', cursive;
 }
+/*headline*/
+#course h1{
+	font-size: 2em;
+	border-bottom:2px solid;
+}
+/*-------------------------------*/
+
+/*meta icon*/
+.meta{
+	margin-top:1em;
+}
+.meta span{
+	margin-right:1.2em;
+}
+/*-------------------------------*/
+
+/*line height*/
+.course-portrait p{
+	font: 1em/1.5 serif;
+}
+/*-------------------------------*/
+
+/*Pseudo-Element*/
+blockquote::before{
+	content: '❝';
+}
+blockquote::after{
+	content: '❞';
+}
+/*-------------------------------*/
+
+/*list effect*/
+.course-content>li,
+.course-week>li,
+.course-grading>li{
+	padding:3px 10px;
+}
+.course-syllabus li:nth-child(odd){
+	background-color:rgba(255,255,255,0.5);
+}
+.course-week>li{
+	font-family: 'La Belle Aurore', cursive;
+}
+.course-week #time{
+	display:inline-block;
+	width:120px;
+}
+.course-week #content{
+	color:red;
+}
+/*-------------------------------*/
+
+.course-box{
+	position: relative;
+	width:30%;
+	margin:2em;
+	padding:1em;
+	background-color: #fff;
+	box-shadow: 0 1px 5px rgba(0,0,0,1), 0 0 50px rgba(0,0,0,0.5) inset;
+	border-radius: 2%     0%     3%     0% /     20%     0%     20%     0%;
+}
+/*-------------------------------*/
 
 /*a*/
 a:link{
-  text-decoration: none;
-  /* remove underline */
-  color: blue;
+	text-decoration: none;
+	/* remove underline */
+	color: blue;
 }
 a:visited{
-  color: purple;
+	color: purple;
 }
 a:hover{
-  text-decoration: underline;
-  color: red;
+	text-decoration: underline;
+	color: red;
 }
 a:active{
-  color: yellow;
+	color: yellow;
+}
+/*-------------------------------*/
+
+/*input*/
+input/*[type=text]*/{
+	font-size: 2em;
+	border: 1px solid blue;
+	background: rgba(0, 150, 255, 0.5);
+}
+input[type=submit]{
+	opacity: 0.3;
+}
+input:checked + label{
+	color: green;
+}
+input:checked ~ input[type=submit]{
+	opacity: 1;
+}
+/*-------------------------------*/
+label,
+input{
+	font-family: 'Jolly Lodger', cursive;
+	font-size: 2em;	
 }
