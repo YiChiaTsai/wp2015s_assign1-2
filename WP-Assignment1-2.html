@@ -1,111 +1,114 @@
 <!DOCTYPE html> 
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>資科系選修課－程式語言</title>
-    <meta name="description" content="本課程講授「程式語言原理與設計」，而不是教授某一程式語言。">
-	<link rel="stylesheet" type="text/css" href="file.css"
-  </head>
-  
-  <body>
-    <header>
-      <h1>資科系選修－程式語言</h1>
-      <h2>Before you take this course, you must answer these questions!</h2>
-      <br>
-    </header>
+<head>
+<meta charset="UTF-8">
+<title>資科系必修課－程式語言</title>
+<meta name="description" content="本課程講授「程式語言原理與設計」，而不是教授某一程式語言。">
+<link rel="stylesheet" type="text/css" href="file.css">
+<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=La+Belle+Aurore">
+<link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Jolly+Lodger'>
+</head>
+
+<body>
+<header class="headerline">
+	<h1>資科系必修－程式語言<br>Programming Language</h1>
+	<h2>Before you take this course, you must answer these questions!</h2>
+	<br>
+</header>
 
 <!--------------------------------------------------------------------->
 
 <form role="FormofAssign1-2" novalidate oninput="total.value = (courses.valueAsNumber * 1020 * 3)">
 
-  <label>Full name:</label>
-  <input type="text" id="full_name" name="full_name" placeholder="Aaron Tsai" required>
-<br>
+	<label>Full name:</label>
+	<input type="text" id="full_name" name="full_name" placeholder="Aaron Tsai" required>
+	<br>
 
-<!-- 單選 -->
-<p>
-  <label>What is your gender?</label><br>
-  <label><input type="radio" name="sex" value="r0">Male</label><br>
-  <label><input type="radio" name="sex" value="r1">Female</label><br>
-</p>
+	<!-- 單選 -->
+	<p>
+	<label>What is your gender?</label><br>
+	<label><input type="radio" name="sex" value="r0">Male</label><br>
+	<label><input type="radio" name="sex" value="r1">Female</label><br>
+	</p>
 
-  <label>Email address:</label>
-  <input type="email" id="email_addr" name="email_addr" placeholder="ex:xxx@gamil.com" required>
-<br>
+	<label>Email address:</label>
+	<input type="email" id="email_addr" name="email_addr" placeholder="ex:xxx@gamil.com" required>
+	<br>
 
-  <label>Repeat email address:</label>
-  <input type="email" id="email_addr_repeat" name="email_addr_repeat" placeholder="ex:xxx@gamil.com" required 
-   oninput="verifyEmail(this)">
-<br>
+	<label>Repeat email address:</label>
+	<input type="email" id="email_addr_repeat" name="email_addr_repeat" placeholder="ex:xxx@gamil.com" required 
+	oninput="verifyEmail(this)">
+	<br>
 
-  <label>Birthday:</label>
-  <input type="date" id="birth_dt" name="birth_dt" placeholder="mm-dd-yyyy" required>
-<br>
-  
-  <label>PhoneNumber:</label>
-  <input type="tel" id="phone" name="phone" maxlength="10" pattern="[0-9]{10}" placeholder="09xx-xxx-xxx" required>
-<br>
+	<label>Birthday:</label>
+	<input type="date" id="birth_dt" name="birth_dt" placeholder="mm-dd-yyyy" required>
+	<br>
 
-  <label>Age:</label>
-  <input type="number" id="ages" name="ages" value="20" min="1" max="100" required>
-<br>
+	<label>PhoneNumber:</label>
+	<input type="tel" id="phone" name="phone" maxlength="10" pattern="[0-9]{10}" placeholder="09xx-xxx-xxx" required>
+	<br>
 
-  <label>Personal Website:</label>
-  <input type="url" id="web" name="web" 
-   title="Personal website is not neccessory if you don't have one.">
-<br>
+	<label>Age:</label>
+	<input type="number" id="ages" name="ages" value="20" min="1" max="100" required>
+	<br>
 
-<!-- 複選 -->
-<p>
-  <label>Which transportation do you take to school?</label><br>
-  <input type="checkbox" id="chk_btn1" value="c0">
-  <label for="chk_btn1">Bicycle</label><br>
-  <input type="checkbox" id="chk_btn2" value="c1">
-  <label for="chk_btn2">Motorcycle</label><br>
-  <input type="checkbox" id="chk_btn3" value="c2">
-  <label for="chk_btn3">Car</label><br>
-  <input type="checkbox" id="chk_btn4" value="c3">
-  <label for="chk_btn4">Bus</label><br>
-  <input type="checkbox" id="chk_btn5" value="c4">
-  <label for="chk_btn5">MRT</label><br>
-</p>
+	<label>Personal Website:</label>
+	<input type="url" id="web" name="web" 
+	title="Personal website is not neccessory if you don't have one.">
+	<br>
 
-  <label>How many courses will you take?</label>
-  <input type="number" id="courses" name="courses" value="0" min="1" max="20" required>
-<br>
+	<!-- 複選 -->
+	<p>
+	<label>Which transportation do you take to school?</label><br>
+	<input type="checkbox" id="chk_btn1" value="c0">
+	<label for="chk_btn1">Bicycle</label><br>
+	<input type="checkbox" id="chk_btn2" value="c1">
+	<label for="chk_btn2">Motorcycle</label><br>
+	<input type="checkbox" id="chk_btn3" value="c2">
+	<label for="chk_btn3">Car</label><br>
+	<input type="checkbox" id="chk_btn4" value="c3">
+	<label for="chk_btn4">Bus</label><br>
+	<input type="checkbox" id="chk_btn5" value="c4">
+	<label for="chk_btn5">MRT</label><br>
+	</p>
 
-  <label>Estimated total fee:</label>
-  $<output id="total" name="total">00</output>.00
-  <br><br>
+	<label>How many courses will you take?</label>
+	<input type="number" id="courses" name="courses" value="0" min="1" max="20" required>
+	<br>
 
-  <input type="submit" value="Submit your request on course!" /> 
+	<label>Estimated total fee:</label>
+	$<output id="total" name="total">00</output>.00
+	<br><br>
+
+	<input type="submit" value="Submit your request on course!" /> 
 </form>
 <br>
 
 <script>
 function verifyEmail(input) {
-  input = input.srcElement;
-  if (input.value != document.getElementById('email_addr').value) {
-    input.setCustomValidity('The two email addresses must match.');
-  } else {
-    // input is valid -- reset the error message
-    input.setCustomValidity('');
-  }
+	input = input.srcElement;
+	if (input.value != document.getElementById('email_addr').value) {
+		input.setCustomValidity('The two email addresses must match.');
+	} else {
+		// input is valid -- reset the error message
+		input.setCustomValidity('');
+	}
 }
 </script>
 
 <br>
 <!--------------------------------------------------------------------->
-      <footer>
-        <img src="http://ameydhar.github.io/index_files/teaching.jpg" alt="程式語言集合"><br>
-        <a href="http://en.wikipedia.org/wiki/Programming_language" (target="_blank")>程式語言定義？ WikiPedia it！</a>
-        <div class="social-buttons">
-          <a href="http://www.facebook.com.tw">讚</a> | <a href="http://www.youtube.com.tw">+1</a>
-        </div>
-      </footer>
+<footer>
+	<img src="http://ameydhar.github.io/index_files/teaching.jpg" alt="程式語言集合"><br>
+	<a href="http://en.wikipedia.org/wiki/Programming_language" (target="_blank")>程式語言定義？ WikiPedia it！</a>
+	<div class="social-buttons">
+		<a href="http://www.facebook.com.tw">讚</a> | <a href="http://www.youtube.com.tw">+1</a>
+	</div>
+</footer>
 
-    <footer>
-      <p>All Rights Reserved.</p>
-    </footer>
-  </body>
+<footer>
+	<p>All Rights Reserved.</p>
+</footer>
+</body>
 </html>
