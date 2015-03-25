@@ -23,6 +23,24 @@ footer>img{
 	background-color:rgba(200, 200, 255, 0.5);
 	box-sizing:border-box;
 }
+#round{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 350px;
+	padding:10px 20px
+	-webkit-border-image: url(http://www.w3schools.com/css/border.png) 30 30 round; /* Safari 3.1-5 */
+  -o-border-image: url(http://www.w3schools.com/css/border.png) 30 30 round; /* Opera 11-12.1 */
+  border-image: url(http://www.w3schools.com/css/border.png) 30 30 round;
+}
+#stretch{
+	position: relative;
+	width: 150px;
+	padding:10px 20px
+	-webkit-border-image: url(http://www.w3schools.com/css/border.png) 30 30 stretch; /* Safari 3.1-5 */
+  -o-border-image: url(http://www.w3schools.com/css/border.png) 30 30 stretch; /* Opera 11-12.1 */
+  border-image: url(http://www.w3schools.com/css/border.png) 30 30 stretch;
+}
 /*-------------------------------*/
 
 /*headerline*/
@@ -132,9 +150,47 @@ input:checked + label{
 input:checked ~ input[type=submit]{
 	opacity: 1;
 }
-/*-------------------------------*/
+
 label,
 input{
 	font-family: 'Jolly Lodger', cursive;
 	font-size: 2em;	
 }
+/*-------------------------------*/
+
+/*animation*/
+/* Chrome, Safari, Opera */
+.show-animation>img{
+width: 100px;
+height: 100px;
+background-color: red;
+position: relative;
+-webkit-animation: myfirst 5s ease 2s infinite alternate; /* Chrome, Safari, Opera */
+animation: myfirst 5s ease 2s infinite alternate;
+/*  -webkit-animation-name: myfirst;  //Chrome, Safari, Opera
+    -webkit-animation-duration: 5s;  //Chrome, Safari, Opera
+    -webkit-animation-iteration-count: infinite;  //Chrome, Safari, Opera
+    -webkit-animation-direction: alternate;  //Chrome, Safari, Opera
+    animation-name: myfirst;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+*/
+}
+@-webkit-keyframes myfirst {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:70px; top:0px;}
+    50%  {background-color:blue; left:70px; top:70px;}
+    75%  {background-color:green; left:0px; top:70px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {background-color:red; left:0px; top:0px;}
+		25%  {background-color:yellow; left:70px; top:0px;}
+    50%  {background-color:blue; left:70px; top:70px;}
+    75%  {background-color:green; left:0px; top:70px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+/*-------------------------------*/
